@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,11 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #2a2a2a;
+            color: #f4f4f4;
             line-height: 1.6;
             padding: 20px;
         }
@@ -32,29 +33,36 @@
             text-align: center;
             margin-bottom: 50px;
         }
+
         header h1 {
-            font-size: 36px;
-            color: #4CAF50;
+            font-size: 48px;
+            color: #9b59b6;
+            font-family: 'Roboto', sans-serif;
         }
+
         header p {
-            font-size: 18px;
-            color: #555;
+            font-size: 20px;
+            color: #bbb;
         }
 
         /* Section Style */
         section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
+
         section h2 {
-            color: #4CAF50;
-            font-size: 28px;
+            color: #9b59b6;
+            font-size: 32px;
             margin-bottom: 20px;
         }
 
         section p {
-            font-size: 18px;
-            color: #555;
+            font-size: 20px;
+            color: #ddd;
         }
 
         /* Hobbies Section */
@@ -62,38 +70,57 @@
             list-style: none;
             padding: 0;
         }
+
         .hobbies li {
-            margin-bottom: 10px;
-            font-size: 18px;
+            margin-bottom: 12px;
+            font-size: 20px;
+            color: #ddd;
         }
 
         /* Contact Form */
         .contact-info p {
-            font-size: 18px;
+            font-size: 20px;
             margin: 10px 0;
         }
-        
+
         .contact-info a {
             text-decoration: none;
-            color: #4CAF50;
+            color: #9b59b6;
             font-weight: bold;
+        }
+
+        /* Contact Info Sliding Animation */
+        @keyframes slide {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .contact-info {
+            animation: slide 2s ease-out forwards;
         }
 
         /* Mobile Responsiveness */
         @media screen and (max-width: 768px) {
             header h1 {
-                font-size: 28px;
+                font-size: 36px;
             }
 
             header p {
-                font-size: 16px;
+                font-size: 18px;
             }
 
             section h2 {
-                font-size: 24px;
+                font-size: 26px;
             }
 
-            section p, .hobbies li, .contact-info p {
+            section p,
+            .hobbies li,
+            .contact-info p {
                 font-size: 16px;
             }
 
@@ -105,12 +132,13 @@
         /* Footer */
         footer {
             text-align: center;
-            font-size: 16px;
+            font-size: 18px;
             color: #888;
             margin-top: 50px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <!-- Header Section -->
@@ -154,4 +182,14 @@
         </footer>
     </div>
 </body>
+
 </html>
+
+   
+      
+     
+
+          
+       
+
+      
